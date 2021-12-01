@@ -39,7 +39,7 @@ def main():
     # get vid transcripts from youtube api
 
     transcripts = {}
-    for vid in vids[0:1]:
+    for vid in vids:
         try:
             t = YouTubeTranscriptApi.get_transcript(vid) 
         except TranscriptsDisabled:
